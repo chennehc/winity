@@ -1,0 +1,109 @@
+/* grid defining */
+
+[class*='col-'] {/* when class starts w/ col- is selected, do xxx  */
+	float:left; /* wrap around left */
+	padding: 0;
+	text-align: center;
+}
+
+.grid {
+	width: 1000px; 
+	max-width: 100%; 
+	margin: 0 auto 5px auto;
+}
+
+*,*:after,*:before{ /* the * selects EVERYTHING */
+	-webkit-box-sizeing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+} 	/*for webkit wanna use border box: padding INSIDE border; */
+	/* content-box: padding OUTSIDE border; */
+
+.grid:after{
+	content:""; /*inject space to clear float*/
+	display: block;
+	clear: both; 
+}
+
+.col-1of1{
+	width: 100%;
+/* do width=100% in main.css nav tag */
+}
+
+.col-1of4T{
+	width: 22%;
+/* do width=100% in main.css nav tag */
+}
+
+.col-1of4{
+	width: 20%;
+}
+
+.col-1of5{
+	width: 19%;
+}
+
+.col-1of22{
+	width: 50%;
+}
+
+@media (max-width: 990px) {
+	.col-1of5{
+		width: 100%;
+		padding-top: 0px;
+	}
+}
+
+@media (max-width: 990px) {
+	.col-1of4{
+		width: 30%;
+		padding-top: 0px;
+	}
+}
+
+@media (max-width: 581px) {
+	.col-1of4{
+		width: 100%; 
+		padding-top: 5px;
+		border-bottom: 1px dotted #B8B8B8;
+		/*border-style: solid;
+		border-width: 1px; 
+		border-color: #874854;*/
+	}
+}
+
+.col-1of3{
+	width: 32.70%;
+}
+
+.col-2of3{
+	width: 66.67%;
+}
+
+
+@media (max-width: 830px) {
+	.col-1of3{
+		width: 100%;
+		padding-top: 5px;
+	}
+}
+
+.col-1of2{
+	width: 50%;
+}
+
+@media (max-width: 700px) {
+	.col-1of2{
+		width: 100%;
+		padding-top: 5px;
+	}
+}
+
+@media (max-width: 700px) {
+	.col-1of22{
+		width: 100%;
+		padding-top: 5px;
+	}
+}
+
+

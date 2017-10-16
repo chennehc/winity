@@ -1,0 +1,169 @@
+<!doctype html>
+<html> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="css/grid.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+		<title>Winity</title>
+	</head>
+	<body>
+		<div class="grid">
+
+			<!--Logo-->
+			<header id="top">
+				<a href="index.html"><h1> Winity </h1></a>
+			</header>
+			<!--End of logo-->
+
+			<!--LogIn-->
+			<div id="logo">
+				<span id="scart"><a href="cart.html"><img src="imgs/cart.png" ></a></span>
+				<ul>
+					<li><a href="log.html">Log in/Register</a></li>
+					<li><a href="guest.html">Guest order check</a></li>
+				</ul>
+			</div>
+			<!--End of LogIn-->
+				
+			<!--Menu-->
+			<nav class = "grid">
+				<div class="col-1of4">
+					<li><a href="index.html">Home</a></li>
+				</div>
+
+				<div  class="col-1of4">
+					<li><a href="wine.html">Our Wine</a></li> 
+				</div>
+
+				<div  class="col-1of4">
+					<li><a href="about.html">About</a></li>
+				</div>
+				<div  class="col-1of4">
+					<li><a href="contact.html">Contact</a></li>
+				</div>
+			</nav>
+			<!--End of Menu-->
+
+
+<!-- ********************Content******************** -->
+
+			<!-- detail product lists top 2 -->
+			<div class="col-1of1" >
+					<h3 class="pageTitle">Shopping Cart</h3> 
+			</div>
+			<div class="col-1of1" id="cart1">			
+				<div class="col-1of2" id="cartItem">
+						<a href="individualRed1.html"><img src="imgs/red1.png" height="215"/></a>
+					<div id="cartTxt"> 
+						<a href="individualRed1.html"><h4>Cabernet Sauvignon - Hess Select 2011</h4></a>			
+					</div> <!--end of cartxt-->
+				</div>
+
+				<div class="col-1of2" id="cartItem">
+					<form method="post" action="" id="addWine">
+						<input type="text" size="3" name="qty" placeholder="1">
+						<label for="qty" form="addWine">$60/bottle</label>
+						<input type="text" size="3" name="qty" placeholder="0">
+						<label for="qty" form="addWine">$240/case</label>						
+						<div id="btnCart"> 
+							<button type="submit" name="out">Update</button>
+							<button type="submit" name="addCart">Remove</button>
+						</div>
+					</form>
+				</div>							
+			</div>	
+<!-- 			<div class="col-1of1" id="dotLine"></div> -->
+
+			<div class="col-1of1" id="cart1" >
+				<div class="col-1of2" id="cartItem">
+						<a href="individualWhite2.html"><img src="imgs/white2.png" height="215"/></a>
+					<div id="cartTxt"> 
+						<a href="individualWhite2.html"><h4>TIKI Sauvignon Blanc 2009</h4></a>					
+					</div> <!--end of cartxt-->
+				</div>
+
+				<div class="col-1of2" id="cartItem">
+					<form method="post" action="" id="addWine">
+						<input type="text" size="3" name="qty" placeholder="1">
+						<label for="qty" form="addWine">$45/bottle</label>
+						<input type="text" size="3" name="qty" placeholder="0">
+						<label for="qty" form="addWine">$220/case</label>						
+						<div id="btnCart"> 
+							<button type="submit" name="out">Update</button>
+							<button type="submit" name="addCart">Remove</button>
+						</div>
+					</form>
+				</div>							
+			</div>	
+			<div class="col-1of1" id="dotLine"></div>
+
+		<!--subtotal-->
+			<div class="col-1of1" id="cartItem">
+				<div class="col-1of2" id="cartItem">
+					<ul>
+						<li>SUB TOTAL: </li>
+						<li>SHIPPING: </li>
+						<li id="dotLine"></li>
+						<li id="total">ORDER TOTAL: </li>
+					</ul>
+				</div>
+				<div class="col-1of2" id="price">
+					<ul>
+						<li>$105.00 </li>
+						<li>$10.29 </li>
+						<li id="dotLine"></li>
+						<li id="total">$115.29</li>
+					</ul>
+				</div>
+
+				<div id="btnCart"> 
+					<form method="post">
+						<button type="submit" name="addCart" formaction="pay.html">checkout</button>
+						<button type="submit" name="out" formaction="wine.html">continue shopping </button>
+					</form>
+				</div>
+			</div>							
+<!-- ********************End of Content******************** -->
+
+	</div><!--end of grid class-->
+		
+		<!-- FOOTER -->
+		<div id ="footer">
+			<div class="grid">
+				<div class="col-1of1">
+				<ul>
+					<li>Phone: +1 (604) 331-7900 </li>
+					<li>Email: winitywine@winity.com</li>
+					<li>Address: 1633 Manitoba St Vancouver, BC V5Y 0B8</li>
+				</ul>
+					<p>COPYRIGHT © 2014 WINITY</p>
+				</div><!--end of col-1of2-->
+			</div>
+		</div>
+		<!--end of footer-->
+
+	</body>
+</html>
+
+
+<!--
+
+		<form method="post" action="#" id="cmt">
+
+			<label for="formname">Name</label>
+			<input type="text" id="formname" name="formname" placeholder="Jane Doe">
+
+			<label for="formsubject">Subject</label>
+			<input type="text" id="formsubject" name="formsubject" placeholder="A title">
+
+			<label for="formcmt">Comment</label>
+			<textarea id="formcmt" name="formcmt" placeholder="Place cmt here"></textarea>
+
+			<input type="submit" value="submit">
+
+		</form>
+	-->
